@@ -15,7 +15,7 @@ export function enterTheRabbitHole(name: string) {
 }
 
 function chooseHole(input: string) {
-	// first we have to check our user input is valid
+	/// first we have to check our user input is valid
 	// We might end up with a valid Hole, or we might end up with `undefined` if the input is invalid
 	const hole = parseHoleInput(input);
 
@@ -37,7 +37,7 @@ function chooseHole(input: string) {
 export function enterHole(hole: Hole): void {
 	clear(true);
 
-	// @ts-ignore 👉 FIXME ❌
+
 	if (hole === 'Rabbit') {
 		return meetTheCheshireCat();
 	} else {
